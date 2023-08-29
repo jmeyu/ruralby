@@ -31,17 +31,13 @@
 			</div>
 			<div class="modal-body">
 				<p>
-					你好。 <br />
-					非常欢迎你的到来。<br />
-					在将所有创作设为公开以前，我作了许久的犹豫和心理建设，本站的成立更是来之不易。 <br />
-					历经许久，为了筑成属于自己的房间、挣到我的五百英镑，我还是将它毫无保留地呈现出来了。
+					你好，非常欢迎你的到来。 <br />
+					本站的成立和公开原创内容的决定皆来之不易。<br />
 				</p>
 				<p>
-					抄袭与剽窃是所有作者的噩梦。希望你是怀揣着读者的心态一览，窥探我小小的世界。同时我接受意见、建议、小小的憎恶和大大的赞。
+					抄袭与剽窃是所有作者的噩梦。<br />
+					希望你是怀揣着读者的心态一览，窥探我小小的世界。同时我接受意见、建议、小小的憎恶和大大的赞。
 				</p>
-				<p>Welcome to Very Unpopular Opinion (VUOP). Here keeps my very personal review on books, movies, series and whatever, you name it.</p>
-				<p>“By hook or by crook, I hope that you will possess yourselves of money enough to travel and to idle, to contemplate the future or the past of the world, to dream over books and loiter at street corners and let the line of thought dip deep into the stream.”</p>
-				<p>Happy exploring. Remember, all rights reserved.</p>
 				<p><strong>未经许可传播剽窃抄袭 均属侵权 ©</strong></p>
 			</div>
 			<div class="modal-footer">

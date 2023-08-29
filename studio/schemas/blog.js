@@ -8,14 +8,14 @@ export default {
       description: 'A suitable title within 60 characters.',
       type: 'string',
       title: 'Title',
-      validation: (Rule) => Rule.required().min(10).max(60),
+      validation: (Rule) => Rule.required().min(1).max(60),
     },
     {
       name: 'description',
       description: 'A fitting description of the article.',
       type: 'text',
       title: 'Description',
-      validation: (Rule) => Rule.required().min(100).max(350),
+      validation: (Rule) => Rule.required().min(10).max(350),
     },
     {
       name: 'category',
