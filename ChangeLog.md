@@ -12,3 +12,4 @@
 - [ ] Change blog icon and title
 - [ ] Upload all articles
 - [ ] Create new field of "Chores Worth" for Review
+- [ ] Create new document type for Misc Notes
