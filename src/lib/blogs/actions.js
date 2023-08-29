@@ -30,14 +30,14 @@ export function share(slug, title) {
 	if (navigator.share) {
 		navigator.share({
 			title: title,
-			url: `https://vuop.netlify.app/article/${slug}`
+			url: `https://ruralby.netlify.app/article/${slug}`
 		});
 		return;
 	}
 
 	message.set('Link copied');
 	description.set('Copied link to the clipboard.');
-	const currentUrl = `${title}\n\nhttps://vuop.netlify.app/article/${slug}`;
+	const currentUrl = `${title}\n\nhttps://ruralby.netlify.app/article/${slug}`;
 	navigator.clipboard.writeText(currentUrl);
 	showToast.set(true);
 	setTimeout(() => showToast.set(false), 2000);

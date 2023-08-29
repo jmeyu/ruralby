@@ -18,7 +18,7 @@
 		min-height: 100vh;
 		background-color: rgb(28, 25, 38);
 		background-image: linear-gradient(rgba(28, 25, 38, 0.6), rgba(28, 25, 38, 0.3), rgba(28, 25, 38, 0.4)),
-			url('https://raw.githubusercontent.com/jmeyu/vuop/master/static/img/bg/hero-bg.webp?token=GHSAT0AAAAAAB4WNDHPMZIMCG6JWFF4P3GCY6ABK4Q');
+			url('https://raw.githubusercontent.com/jmeyu/ruralby/master/static/img/bg/hero-bg.webp'); //token
 		background-size: cover;
 		background-position: center;
 	}
