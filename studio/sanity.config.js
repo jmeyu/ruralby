@@ -7,9 +7,9 @@ import {markdownSchema} from 'sanity-plugin-markdown'
 
 export default defineConfig({
   name: 'default',
-  title: 'VUOP',
+  title: 'Ruralby_Sanity',
 
-  projectId: 'wto9a8r0',
+  projectId: 'tzw45jpf',
   dataset: 'production',
 
   plugins: [deskTool(), unsplashImageAsset(), visionTool(), markdownSchema()],
