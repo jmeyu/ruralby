@@ -1,37 +1,49 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	document.querySelector('#togBtn').addEventListener('input', (event) => {
-  document.querySelector('.title').textContent = data[event.currentTarget.checked ? 'japanese' : 'english'].title;
-});
+<script>
+	import { t, locale, locales } from "./Hero_i18n";
+	export let lang = 'en';
+	// Create a locale specific timestamp
+	$: time = new Date().toLocaleDateString(lang, {
+		weekday: "long",
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	});
 
-var data = {
-  "english": {
-    "title": "Hello World"
-  },
-  "japanese": {
-    "title": "ハロー・ワールド"
-  }
+	function toggle(event) {
+		lang = lang === 'en' ? 'ja' : 'en';
+		$locale = lang;
+	}
 </script>
 
 <section id="hero" data-scroll-section>
 	<slot />
-	<label class="switch">
-	<input type="checkbox" id="togBtn">
-	<div class="slider round">
-		<span language='japanese' class="on">JPN</span>
-		<span language='english' class="off">ENG</span>
-	</div>
-	</label>
-
-	<ul class="nav-items">
-	<div class="content">
-		<h2 class="title">Hello World</h2>
-	</div>
-	</ul>
-
 	<div class="hero__content" data-scroll>
 		<img src="/img/svg/avatar.svg" alt="">
+
+		<svg 
+			class="localeSwitcher"
+			width="63px"
+			height="36px"
+			viewBox="0 0 42 24"
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+					on:click={toggle}
+		>
+			<g class={lang}>
+				<rect x="0" y="0" width="42" height="24" rx="12" />
+				<circle class={lang} cx="12" cy="12" r="10" />
+				<path class="ja" d="M31.25,10.13 L32.38,10.45 C32.34,10.53 32.34,10.53 32.26,10.74 C32.16,11.02 32.15,11.03 32.12,11.12 C32.53,11.22 32.82,11.36 33.16,11.61 C33.8,12.09 34.11,12.71 34.11,13.5 C34.11,14.59 33.52,15.44 32.39,16 C31.8,16.29 31.23,16.44 30.35,16.53 C30.24,16.1 30.15,15.92 29.82,15.4 C30.63,15.39 31.14,15.28 31.73,15 C32.53,14.62 32.9,14.13 32.9,13.44 C32.9,12.81 32.49,12.3 31.78,12.06 C31.23,13.25 30.76,13.97 30.04,14.72 C29.14,15.67 28.25,16.16 27.42,16.16 C26.49,16.16 25.86,15.45 25.86,14.41 C25.86,13.59 26.21,12.8 26.85,12.17 C27.25,11.78 27.62,11.53 28.22,11.27 C28.22,10.95 28.24,10.55 28.26,10.07 C28.15,10.07 27.61,10.06 26.64,10.03 L26.45,10.03 C26.42,10.03 26.33,10.03 26.22,10.04 L26.22,8.92 C26.67,9.02 27.26,9.07 28.09,9.07 L28.31,9.07 C28.32,8.87 28.32,8.87 28.35,8.47 C28.36,8.34 28.37,8.09 28.37,7.9 C28.37,7.86 28.37,7.82 28.35,7.74 L29.59,7.8 C29.51,8.07 29.47,8.33 29.41,9.03 C31.01,8.94 32.43,8.74 33.2,8.5 L33.25,9.65 C33.11,9.66 33.07,9.66 32.86,9.69 C31.76,9.87 30.14,10.02 29.34,10.04 C29.31,10.47 29.3,10.79 29.29,11 C29.83,10.89 30.06,10.87 30.67,10.87 C30.79,10.87 30.87,10.87 31.05,10.89 C31.16,10.57 31.22,10.36 31.25,10.13 Z M28.24,12.41 C27.8,12.7 27.63,12.85 27.43,13.1 C27.13,13.49 26.98,13.9 26.98,14.32 C26.98,14.77 27.2,15.05 27.55,15.05 C27.83,15.05 28.1,14.93 28.42,14.67 C28.29,14.02 28.24,13.38 28.24,12.41 Z M29.37,13.92 L29.39,13.93 C29.43,13.87 29.43,13.87 29.5,13.79 C29.97,13.26 30.37,12.62 30.74,11.79 C30.63,11.78 30.58,11.78 30.48,11.78 C30.04,11.78 29.68,11.83 29.28,11.96 C29.29,12.88 29.29,12.98 29.35,13.68 C29.36,13.74 29.36,13.74 29.36,13.81 C29.36,13.86 29.36,13.87 29.37,13.92 Z" />
+				<path class="en" d="M11.25,8.4 L12.87,8.4 L15.89,16 L14.27,16 L13.55,14 L10.49,14 L9.76,16 L8.23,16 L11.25,8.4 Z M13.13,12.82 L12.01,9.76 L10.9,12.82 L13.13,12.82 Z" />
+			</g>
+		</svg>
+
+		<h1>{$t("homepage.title")}!</h1>
+		<p>{@html $t("homepage.welcome", { name: "Jane Doe" })}!</p>
+		<p>{@html $t("homepage.time", { time })}!</p>
+
 		<p>看点书、看点电影、品茗、小酌，过过日子。</p>
 		<p>如电影《死亡诗社》所述：我步入丛林／因为我希望生活得有意义／我希望活得深刻／吸取生命中所有的精华／把非生命的一切都击溃／以免当我生命终结／发现自己从没有活过。</p>
+		<p>As stated in the movie, Dead Poet (1989): "I went to the woods because I wished to live deliberately... I wanted to live deep and suck out all the marrow of life! To put to rout all that was not life. And not, when I came to die, discover that I had not lived."</p>
 		
 		<a class="btn" href="/blogs">READ THE BLOG</a>
 	</div>
@@ -67,83 +79,6 @@ var data = {
 			}
 		}
 	}
-
-	.switch {
-  position: relative;
-  display: inline-block;
-  width: 90px;
-  height: 34px;
-}
-
-.switch input {
-  display: none;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ca2222;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked+.slider {
-  background-color: #2ab934;
-}
-
-input:focus+.slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-  -webkit-transform: translateX(55px);
-  -ms-transform: translateX(55px);
-  transform: translateX(55px);
-}
-
-
-/*------ ADDED CSS ---------*/
-
-.on {
-  display: none;
-}
-
-.on,
-.off {
-  color: white;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  font-size: 10px;
-  font-family: Verdana, sans-serif;
-}
-
-input:checked+.slider .on {
-  display: block;
-}
-
-input:checked+.slider .off {
-  display: none;
-}
-
-
 	p {
 		display: block;
 		width: 40vw;
@@ -153,5 +88,32 @@ input:checked+.slider .off {
 		min-width: 300px;
 		text-align: center;
 		padding: 1rem;
+	}
+
+	main {
+    max-width: 24rem;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+		rect {
+		fill: #ccc;
+	}
+	
+	circle {
+		transition: transform 0.25s ease-out;
+		fill: #444
+	}
+	
+	circle.ja {
+		transform: translatex(18px);
+	}
+	
+	path {
+		transition: fill 0.4s ease-out;
+		fill: #222;
+	}
+	
+	.ja path.ja, .en path.en {
+		fill: #eee;
 	}
 </style>
