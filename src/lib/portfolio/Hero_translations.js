@@ -1,11 +1,12 @@
 export default {
-    en: {
-      "homepage.title": "看点书、看点电影、品茗、小酌，过过日子。",
-      "homepage.body": "测试",
-    },
-    zh_cn: {
-      "homepage.title": "Live boldly. Push yourself. Don't settle.",
-      "homepage.body": "testing",
-    },
-  };
-  
+  en: {
+    "homepage.title": "Hello, World!",
+    "homepage.welcome": "Hi <strong>{{name}}</strong>, how are you?",
+    "homepage.time": "The current time is: {{time}}",
+  },
+  ja: {
+    "homepage.title": "¡Hola Mundo!",
+    "homepage.welcome": "Hola, <strong>{{name}}</strong>, ¿cómo estás?",
+    "homepage.time": "La hora actual es: {{time}}",
+  },
+};
