@@ -39,7 +39,7 @@
 
 		<h1>{$t("homepage.title")}</h1>
 		<blockquote>
-			<p>{@html $t("homepage.body")}</p>
+			<p><i>{@html $t("homepage.body")}</i></p>
 		</blockquote>
 		<code>{@html $t("homepage.time", { time })}</code>
 		
