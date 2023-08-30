@@ -10,7 +10,7 @@
 	});
 
 	function toggle(event) {
-		lang = lang === 'en' ? 'ja' : 'en';
+		lang = lang === 'en' ? 'zh' : 'en';
 		$locale = lang;
 	}
 </script>
@@ -37,13 +37,9 @@
 			</g>
 		</svg>
 
-		<h1>{$t("homepage.title")}!</h1>
-		<p>{@html $t("homepage.welcome", { name: "Jane Doe" })}!</p>
-		<p>{@html $t("homepage.time", { time })}!</p>
-
-		<p>看点书、看点电影、品茗、小酌，过过日子。</p>
-		<p>如电影《死亡诗社》所述：我步入丛林／因为我希望生活得有意义／我希望活得深刻／吸取生命中所有的精华／把非生命的一切都击溃／以免当我生命终结／发现自己从没有活过。</p>
-		<p>As stated in the movie, Dead Poet (1989): "I went to the woods because I wished to live deliberately... I wanted to live deep and suck out all the marrow of life! To put to rout all that was not life. And not, when I came to die, discover that I had not lived."</p>
+		<h1>{$t("homepage.title")}</h1>
+		<blockquote><p>{@html $t("homepage.body")}</p></blockquote>
+		<h4>{@html $t("homepage.time", { time })}</h4>
 		
 		<a class="btn" href="/blogs">READ THE BLOG</a>
 	</div>
@@ -104,7 +100,7 @@
 		fill: #444
 	}
 	
-	circle.ja {
+	circle.zh {
 		transform: translatex(18px);
 	}
 	
@@ -113,7 +109,7 @@
 		fill: #222;
 	}
 	
-	.ja path.ja, .en path.en {
+	.zh path.zh, .en path.en {
 		fill: #eee;
 	}
 </style>
