@@ -1,6 +1,6 @@
 <script>
 	import { t, locale, locales } from "./Hero_i18n";
-	export let lang = 'en';
+	export let lang = 'zh_cn';
 	// Create a locale specific timestamp
 	$: time = new Date().toLocaleDateString(lang, {
 		weekday: "long",
@@ -37,8 +37,8 @@
 			</g>
 		</svg>
 
-		<h1>{$t("homepage.title")}!</h1>
-		<p>{@html $t("homepage.body")}!</p>
+		<h1>{$t("homepage.title")}</h1>
+		<p>{@html $t("homepage.body")}</p>
 		
 		<a class="btn" href="/blogs">READ THE BLOG</a>
 	</div>
