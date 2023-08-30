@@ -1,4 +1,4 @@
-<script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 	document.querySelector('#togBtn').addEventListener('input', (event) => {
   document.querySelector('.title').textContent = data[event.currentTarget.checked ? 'japanese' : 'english'].title;
 });
@@ -14,9 +14,6 @@ var data = {
 
 <section id="hero" data-scroll-section>
 	<slot />
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 	<label class="switch">
 	<input type="checkbox" id="togBtn">
 	<div class="slider round">
