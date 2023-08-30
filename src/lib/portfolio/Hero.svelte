@@ -41,7 +41,6 @@
 		<blockquote>
 			<p><i>{@html $t("homepage.body")}</i></p>
 		</blockquote>
-		<code>{@html $t("homepage.time", { time })}</code>
 		
 		<a class="btn" href="/blogs">READ THE BLOG</a>
 	</div>
