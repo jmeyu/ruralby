@@ -1,14 +1,4 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPRYYE84RE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JPRYYE84RE');
-</script>
-
-<script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPRYYE84RE">
 	import Icon from '@iconify/svelte';
 	import Logo from '$lib/Other/logo.svelte';
 	import { goto } from '$app/navigation';
@@ -16,6 +6,12 @@
 
 	let width;
 	let open;
+
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-JPRYYE84RE');
 
 	function clearSearch() {
 		document.querySelector('.search input').value = '';
