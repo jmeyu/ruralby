@@ -8,11 +8,15 @@
 
 ## 2023-08-30
 - [x] Debug blog page not showing issue
+- [x] Change blog icon and title
+- [x] Upload main articles
+- [x] Set up translation toggle button for "Hero"
 
 ### To-Do
-- [ ] Change blog colour theme
-- [ ] Change blog icon and title
+- [ ] Change blog colour theme / Toggle colour theme
+- [ ] Fix blog title not showing
 - [ ] Upload all articles
 - [ ] Create new field of "Chores Worth" for Review
 - [ ] Create new document type for Misc Notes
 - [ ] Fix the "1 minute read" bug
+- [ ] Set up translation toggle button for "Contact Me"
