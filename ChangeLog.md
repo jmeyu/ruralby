@@ -8,7 +8,7 @@
 
 ## 2023-08-30
 - [x] Debug blog page not showing issue
-- [x] Change blog icon and title
+- [x] Change blog favicon and title
 - [x] Upload main articles
 - [x] Set up translation toggle button for "Hero"
 
@@ -20,3 +20,4 @@
 - [ ] Create new document type for Misc Notes
 - [ ] Fix the "1 minute read" bug
 - [ ] Set up translation toggle button for "Contact Me"
+- [ ] Replace "logo" item
