@@ -1,6 +1,6 @@
 export default {
   en: {
-    "homepage.title": "Rural in the Lullaby.",
+    "homepage.title": "Curling up with a good book, indulging in captivating movies, savoring a cup of tea, and toasting to life's moments.",
     "homepage.body": "By hook or by crook, I hope that you will possess yourselves of money enough to travel and to idle, to contemplate the future or the past of the world, to dream over books and loiter at street corners and let the line of thought dip deep into the stream.",
     "homepage.time": "Thanks for visiting on {{time}}.",
   },
