@@ -63,7 +63,7 @@
 			</form>
 		</div>
 
-		<a title="Source Code" class="github" href="https://www.github.com/jmeyu/vuop/" target="_">
+		<a title="Source Code" class="github" href="https://www.github.com/jmeyu/ruralby/" target="_">
 			<Icon icon="fa:github" />
 		</a>
 	</header>

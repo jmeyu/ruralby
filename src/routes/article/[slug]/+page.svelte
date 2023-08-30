@@ -51,7 +51,7 @@
 	<meta property="twitter:url" content="https://ruralby.netlify.app/article/{data.blogs.slug.current}" />
 	<meta property="twitter:title" content="{data.blogs.title} | Ruralby" />
 	<meta property="twitter:description" content={data.blogs.description} />
-	<meta property="twitter:image" content={data.blogs.featuredImage.asset.url + '?w=100&fm=webp'} />
+	<meta property="twitter:image" content={data.blogs.featuredImage.asset.url + '?w=256&fm=webp'} />
 </svelte:head>
 
 <svelte:window bind:innerWidth />
