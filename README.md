@@ -33,6 +33,11 @@ Direct into the newly created `Ruralby_Sanity` folder to edit the schemas. You m
 
 With your studio running and your browser open on http://localhost:3333, you can now click the pencil button (📝) to create a new document linking to your blog.
 
+> Note that Blog document type "markdown" requires markdown plugin installation in Sanity folder:
+```
+npm i sanity-plugin-markdown
+```
+
 
 ## Languages and tools
 
