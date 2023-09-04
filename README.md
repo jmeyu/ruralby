@@ -1,6 +1,6 @@
 ## A personal blog made with love, sanity and Sanity
 
-[![Ruralby](static\img\favicon\favicon-32x32.png)](https://ruralby.netlify.app/) [![Ruralby](https://img.shields.io/badge/-Ruralby.-black?style=for-the-badge&logo=pencil&color=orange&logoColor=white)](https://ruralby.netlify.app/)
+[![Ruralby](.\static\img\favicon\favicon-32x32.png)](https://ruralby.netlify.app/) [![Ruralby](https://img.shields.io/badge/-Ruralby.-black?style=for-the-badge&logo=pencil&color=orange&logoColor=white)](https://ruralby.netlify.app/)
 
 ## Installation
 
