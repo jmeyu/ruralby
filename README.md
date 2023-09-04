@@ -1,6 +1,6 @@
 ## A personal blog made with love, sanity and Sanity.
 
-https://ruralby.netlify.app/blogs
+[![Ruralby](https://img.shields.io/badge/Ruralby?style=for-the-badge&logoColor=black)](https://ruralby.netlify.app/blogs)
 
 ### Languages and tools
 
@@ -18,3 +18,5 @@ https://ruralby.netlify.app/blogs
 [![SASS](https://img.shields.io/badge/-SASS-black?style=for-the-badge&logo=sass&color=cc6699&logoColor=white)](https://sass-lang.com/)
 [![Netlify](https://img.shields.io/badge/-Netlify-black?style=for-the-badge&logo=netlify&color=00c7b7&logoColor=white)](https://www.netlify.com/)
 [![Sanity](https://img.shields.io/badge/-Sanity.io-black?style=for-the-badge&logo=pencil&color=orange&logoColor=white)](https://www.sanity.io/)
+
+### How to activate
