@@ -6,13 +6,7 @@
 
 	let width;
 	let open;
-
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-JPRYYE84RE');
-
+	
 	function clearSearch() {
 		document.querySelector('.search input').value = '';
 		document.querySelector('header').classList.remove('open');
