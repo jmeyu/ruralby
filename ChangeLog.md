@@ -21,3 +21,4 @@
 - [ ] Fix the "1 minute read" bug
 - [ ] Set up translation toggle button for "Contact Me"
 - [ ] Replace "logo" item
+- [ ] Disable copying and right click
