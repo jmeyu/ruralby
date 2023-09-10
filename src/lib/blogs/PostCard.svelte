@@ -80,7 +80,7 @@
 	.card {
 		position: relative;
 		height: calc(100% + 2rem);
-		max-width: 630px;
+		max-width: 50%;
 		background: $clr-card;
 		border-radius: 1.5rem;
 		transition: all 200ms ease-in-out, transform 100ms;
