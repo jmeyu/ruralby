@@ -18,7 +18,7 @@
 <section id="hero" data-scroll-section>
 	<slot />
 	<div class="hero__content" data-scroll>
-		<img src="/img/svg/avatar.svg" alt="">
+		<img src="/img/svg/avatar.jpg" alt="">
 
 		<svg 
 			class="localeSwitcher"
