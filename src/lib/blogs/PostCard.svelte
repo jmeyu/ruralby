@@ -80,7 +80,7 @@
 	.card {
 		position: relative;
 		height: calc(100% + 2rem);
-		max-width: 200px;
+		max-width: 630px;
 		background: $clr-card;
 		border-radius: 1.5rem;
 		transition: all 200ms ease-in-out, transform 100ms;
@@ -88,13 +88,13 @@
 
 		.card-image {
 			width: 100%;
-			height: 13rem;
+			height: 5rem;
 			overflow: hidden;
 			border-radius: 1em;
 			transition: all 200ms ease-in-out;
 			img {
-				width: 100%;
-				height: 100%;
+				width: 50%;
+				height: 50%;
 				object-fit: cover;
 				object-position: center center !important;
 				transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
