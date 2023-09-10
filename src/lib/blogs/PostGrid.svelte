@@ -3,9 +3,28 @@
 	export let posts;
 
 	let grid;
+
+	function sortPosts(multiplier) {
+        posts.sort((a,b) => { 
+            if (a.daysAgo > b.daysAgo) {
+                return 1 * multiplier;
+            }
+            if (a.daysAgo < b.daysAgo) {
+                return -1 * multiplier;
+            } 
+            return 0;
+        })
+        posts = posts; // Refresh data
+    }
 </script>
 
 <div class="articles-grid" bind:this={grid}>
+	<button on:click={() => {sortPosts(1)}}>
+		Sort by name LOW to HIGH
+	</button>
+	<button on:click={() => {sortPosts(-1)}}>
+		Sort by name HIGH to LOW
+	</button>
 	{#each posts as post, i}
 		<PostCard {post} {i} />
 	{/each}
