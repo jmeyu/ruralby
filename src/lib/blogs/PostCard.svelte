@@ -79,7 +79,7 @@
 <style lang="scss">
 	.card {
 		position: relative;
-		height: calc(100% + 2rem);
+		height: calc(100% + 5rem);
 		max-width: 630px;
 		background: $clr-card;
 		border-radius: 1.5rem;
