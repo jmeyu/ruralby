@@ -136,7 +136,7 @@
 		margin-top: 5rem;
 		margin-bottom: 2rem;
 		object-fit: cover;
-		height: 100%;
+		height: 33rem;
 		width: 100%;
 	}
 	
