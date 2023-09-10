@@ -4,27 +4,24 @@
 
 	let grid;
 
-	function sortPosts(multiplier) {
+	// function sortPosts(multiplier) {
         posts.sort((a,b) => { 
             if (a.daysAgo > b.daysAgo) {
-                return 1 * multiplier;
+                return 1 * 1;
             }
-            if (a.daysAgo < b.daysAgo) {
-                return -1 * multiplier;
-            } 
             return 0;
         })
         posts = posts; // Refresh data
-    }
+    //}
 </script>
-<div>
+<!-- <div>
 	<button on:click={() => {sortPosts(1)}}>
 	Sort by name LOW to HIGH
 	</button>
 	<button on:click={() => {sortPosts(-1)}}>
 		Sort by name HIGH to LOW
 	</button>
-</div>
+</div> -->
 <div class="articles-grid" bind:this={grid}>
 	{#each posts as post, i}
 		<PostCard {post} {i} />
