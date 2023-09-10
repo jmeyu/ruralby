@@ -88,13 +88,13 @@
 
 		.card-image {
 			width: 100%;
-			height: 5rem;
+			height: 13rem;
 			overflow: hidden;
 			border-radius: 1em;
 			transition: all 200ms ease-in-out;
 			img {
-				width: 50%;
-				height: 50%;
+				width: 100%;
+				height: 100%;
 				object-fit: cover;
 				object-position: center center !important;
 				transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
