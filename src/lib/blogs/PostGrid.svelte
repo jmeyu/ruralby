@@ -17,14 +17,15 @@
         posts = posts; // Refresh data
     }
 </script>
-
-<div class="articles-grid" bind:this={grid}>
+<div>
 	<button on:click={() => {sortPosts(1)}}>
-		Sort by name LOW to HIGH
+	Sort by name LOW to HIGH
 	</button>
 	<button on:click={() => {sortPosts(-1)}}>
 		Sort by name HIGH to LOW
 	</button>
+</div>
+<div class="articles-grid" bind:this={grid}>
 	{#each posts as post, i}
 		<PostCard {post} {i} />
 	{/each}
