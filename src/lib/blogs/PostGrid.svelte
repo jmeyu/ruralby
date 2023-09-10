@@ -19,16 +19,18 @@
 </script>
 
 <!-- Hide the button when the screen is small -->
-{#if innerWidth > 1070}
-<span class="sort-posts">
-	<button class="btn c2a" onclick={() => {sortPosts(1)}}>
-		{#if innerWidth > 1300}Sort by date LOW to HIGH{:else}Sort Low{/if}
-	</button>
-	<button class="btn c2a" onclick={() => {sortPosts(-1)}}>
-		{#if innerWidth > 1300}Sort by date HIGH to LOW{:else}Sort High{/if}
-	</button>
-</span>
-{/if}
+<div>
+	{#if innerWidth > 1070}
+	<span class="sort-posts">
+		<button class="btn c2a" on:click={() => {sortPosts(1)}}>
+			{#if innerWidth > 1300}Sort by date LOW to HIGH{:else}Sort Low{/if}
+		</button>
+		<button class="btn c2a" on:click={() => {sortPosts(-1)}}>
+			{#if innerWidth > 1300}Sort by date HIGH to LOW{:else}Sort High{/if}
+		</button>
+	</span>
+	{/if}
+</div>
 
 <div class="articles-grid" bind:this={grid}>
 	{#each posts as post, i}
