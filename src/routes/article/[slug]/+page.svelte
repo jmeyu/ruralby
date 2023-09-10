@@ -137,7 +137,7 @@
 		margin-bottom: 2rem;
 		object-fit: cover;
 		height: 33rem;
-		width: 100vw;
+		width: 100%;
 	}
 	
 </style>
