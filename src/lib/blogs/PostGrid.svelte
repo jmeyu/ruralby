@@ -16,6 +16,7 @@
         })
         posts = posts; // Refresh data
     }
+
 </script>
 
 <!-- Hide the button when the screen is small -->
