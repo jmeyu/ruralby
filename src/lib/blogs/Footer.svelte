@@ -6,8 +6,7 @@
 	<div class="container">
 		<p>&copy; <span id="year" />Jermin {new Date().getFullYear()}. All rights reserved.</p>
 		<p>
-			Fantastic adaptation from NotYasho | Made with ♥ using <a href="https://kit.svelte.dev/">SvelteKit</a>, hosted on
-			<a href="https://www.netlify.com/">Netlify</a>.
+			Made with ♥ using <a href="https://kit.svelte.dev/">SvelteKit</a>.
 		</p>
 		<div class="social-links">
 			<a href="https://www.github.com/jmeyu" title="Github" rel="noreferrer" target="_blank"><Icon icon="mdi:github" /></a>
