@@ -1,10 +1,10 @@
 export default {
   en: {
-    "homepage.title": "Acknowledgement",
-    "homepage.body": "As the heads up",
+    "aboutpage.title": "Acknowledgement",
+    "aboutpage.body": "As the heads up",
   },
   zh: {
-    "homepage.title": "特此声明",
-    "homepage.body": "特此声明一下吼​​",
+    "aboutpage.title": "特此声明",
+    "aboutpage.body": "特此声明一下吼​​",
   },
 };

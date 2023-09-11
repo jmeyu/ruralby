@@ -1,4 +1,13 @@
 <script>
+	import { t, locale, locales } from "./About_i18n.js";
+	export let lang = 'en';
+	// Create a locale specific timestamp
+	$: time = new Date().toLocaleDateString(lang, {
+		weekday: "long",
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	});
 	function toggle(event) {
 		lang = lang === 'en' ? 'zh' : 'en';
 		$locale = lang;
@@ -22,7 +31,7 @@
 				<path class="en" d="M11.25,8.4 L12.87,8.4 L15.89,16 L14.27,16 L13.55,14 L10.49,14 L9.76,16 L8.23,16 L11.25,8.4 Z M13.13,12.82 L12.01,9.76 L10.9,12.82 L13.13,12.82 Z" />
 			</g>
 		</svg>
-	<h1>{$t("homepage.title")}</h1>
+	<h1>{$t("aboutpage.title")}</h1>
 	<hr />
 	<img
 		src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc4NWMzMjRhYWQzOTNiOTE2ZGYzOTc5ZGVlZDhmOTIxYjM2NGI2MCZjdD1n/ASd0Ukj0y3qMM/giphy.gif"
@@ -30,9 +39,7 @@
 	/>
 	<p>Hey there!</p>
 	<p />
-	<p>
-		{$t("homepage.body")}
-	</p>
+	<p><i>{@html $t("aboutpage.body")}</i></p>
 	<p>
 		Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
