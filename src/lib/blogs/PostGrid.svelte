@@ -16,7 +16,7 @@
         })
         posts = posts; // Refresh data
     }
-
+	sortPosts(1);
 </script>
 
 <!-- Button for sorting post by date -->
@@ -33,7 +33,7 @@
 	</span>
 	{/if}
 </div> -->
-{sortPosts(1)}
+
 <div class="articles-grid" bind:this={grid}>	
 	{#each posts as post, i}
 		<PostCard {post} {i} />
