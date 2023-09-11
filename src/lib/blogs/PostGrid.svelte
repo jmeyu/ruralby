@@ -32,8 +32,8 @@
 	</span>
 	{/if}
 </div>
-
 <div class="articles-grid" bind:this={grid}>
+	{sortPosts(1)}
 	{#each posts as post, i}
 		<PostCard {post} {i} />
 	{/each}
