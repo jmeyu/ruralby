@@ -1,6 +1,6 @@
 export function estimateReadTime(body) {
 	const wordsPerMinute = 183;
-	const wordCount = body.split(' ').length;
+	const wordCount = body.length;
 	const readTime = Math.ceil(wordCount / wordsPerMinute);
 	return readTime;
 }
