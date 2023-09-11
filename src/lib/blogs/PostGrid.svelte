@@ -19,8 +19,9 @@
 
 </script>
 
+<!-- Button for sorting post by date -->
 <!-- Hide the button when the screen is small -->
-<div>
+<!-- <div>
 	{#if innerWidth > 1070}
 	<span class="sort-posts">
 		<button class="btn c2a" on:click={() => {sortPosts(1)}}>
@@ -31,9 +32,9 @@
 		</button>
 	</span>
 	{/if}
-</div>
-<div class="articles-grid" bind:this={grid}>
-	{sortPosts(1)}
+</div> -->
+{sortPosts(1)}
+<div class="articles-grid" bind:this={grid}>	
 	{#each posts as post, i}
 		<PostCard {post} {i} />
 	{/each}
