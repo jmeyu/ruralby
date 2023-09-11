@@ -15,7 +15,8 @@
 </script>
 
 <main>
-	<svg 
+	<p align="right">
+		<svg 
 			class="localeSwitcher"
 			width="63px"
 			height="36px"
@@ -31,6 +32,7 @@
 				<path class="en" d="M11.25,8.4 L12.87,8.4 L15.89,16 L14.27,16 L13.55,14 L10.49,14 L9.76,16 L8.23,16 L11.25,8.4 Z M13.13,12.82 L12.01,9.76 L10.9,12.82 L13.13,12.82 Z" />
 			</g>
 		</svg>
+	</p>
 	<h1>{$t("aboutpage.title")}</h1>
 	<hr />
 	<img
