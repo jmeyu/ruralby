@@ -25,7 +25,6 @@
 				src={post.featuredImage.asset.metadata.lqip}
 				alt="thumbnail"
 				title={post.imageSrc}
-				use:lazyImage={{ threshold: 0.8 }}
 			/>
 		</div>
 	</a>
