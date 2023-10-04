@@ -7,7 +7,7 @@
 	import { lighten } from '$lib/blogs/utils.js';
 
 	let featuredPosts = data.blogs.filter((blog) => blog.featured === true).slice(0, 1);
-	let latestPosts = data.blogs.filter((blog) => !featuredPosts.find((fp) => fp.title === blog.title));
+	let latestPosts = data.blogs.filter((blog) => !featuredPosts.find((fp) => fp.title === blog.title || fp.title != blog.title));
 
 	featuredPosts.forEach((post) => {
 		post.coverImage = post.coverImage + '?w=1000&fm=webp';

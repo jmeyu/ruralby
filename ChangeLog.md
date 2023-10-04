@@ -26,3 +26,5 @@
 - [ ] Create new document type for Misc Notes
 - [ ] Replace "logo" item
 - [ ] Disable copying and right click
+- [ ] Fix featured carousel not showing issue
+- [ ] Fix saved article not showing issue
