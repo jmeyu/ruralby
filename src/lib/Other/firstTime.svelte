@@ -31,7 +31,7 @@
 
 {#if showModal}
 	<div class="modal-overlay">
-		<div class="modal" transition:slide={{ duration: 200 }}>
+		<div class="modal" transition:slide={{ duration: 1000 }}>
 			<div class="modal-header">
 				<Icon icon="mdi:warning-octagon" />
 				<svg 
@@ -54,7 +54,7 @@
 			</div>
 			<div class="modal-body">
 				<p>
-					{$t("firstTime.title")}
+					{@html $t("firstTime.title")}
 				</p>
 				<p>
 					{@html $t("firstTime.body")}
