@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import { slide } from 'svelte/transition';
 	import { t, locale, locales } from "./firstTime_i18n";
-	export let lang = 'zh'
+	export let lang = 'zh';
 
 	let showModal = false;
 
