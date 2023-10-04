@@ -14,7 +14,7 @@
 				showModal = true;
 				setTimeout(() => {
 					showModal = false;
-				}, 10000);
+				}, 50000);
 			}, 4000);
 	});
 
@@ -31,7 +31,7 @@
 
 {#if showModal}
 	<div class="modal-overlay">
-		<div class="modal" transition:slide={{ duration: 10000 }}>
+		<div class="modal" transition:slide={{ duration: 2000 }}>
 			<div class="modal-header">
 				<Icon icon="mdi:warning-octagon" />
 				<p><svg 
