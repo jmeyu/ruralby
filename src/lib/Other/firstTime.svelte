@@ -24,7 +24,7 @@
 	}
 
 	function toggle(event) {
-		lang = lang === 'zh' ? 'en' : 'zh';
+		lang = lang === 'en' ? 'zh' : 'en';
 		$locale = lang;
 	}
 </script>
