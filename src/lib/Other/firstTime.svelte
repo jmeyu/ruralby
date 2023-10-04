@@ -141,4 +141,21 @@
 		background: $accent-0;
 		color: black;
 	}
+	circle {
+		transition: transform 0.25s ease-out;
+		fill: #444
+	}
+	
+	circle.zh {
+		transform: translatex(18px);
+	}
+	
+	path {
+		transition: fill 0.4s ease-out;
+		fill: #222;
+	}
+	
+	.zh path.zh, .en path.en {
+		fill: #eee;
+	}
 </style>
