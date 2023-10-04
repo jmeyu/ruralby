@@ -95,6 +95,7 @@
 <div class="contact">
 	<form action="https://formspree.io/f/mpzgdgkl" method="POST" on:submit|preventDefault={onSubmit}>
 		<header in:fly={{ y: -10, duration: 500, delay: 100 }}>
+			<h2>{@html $t("contact.header")}</h2>
 			<p align="right">
 				<svg 
 					class="localeSwitcher"
@@ -113,7 +114,6 @@
 					</g>
 				</svg>
 			</p>
-			<h2>{@html $t("contact.header")}</h2>
 			<p>{@html $t("contact.disclaimer")}</p>
 		</header>
 		<div class="input-wrapper" in:fly={{ y: 10, duration: 500, delay: 200 }}>
