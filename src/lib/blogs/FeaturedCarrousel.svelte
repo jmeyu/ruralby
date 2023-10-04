@@ -1,6 +1,7 @@
 <script>
 	export let posts;
 	import Featured from '$lib/blogs/Featured.svelte';
+	import Carousel from './Carousel.svelte'
 </script>
 
 <section class="carousel">
@@ -10,7 +11,7 @@
 			<Featured {post} />
 		</div>
 	{/each}
-</Carousel>
+	</Carousel>
 </section>
 
 <style lang="scss">
