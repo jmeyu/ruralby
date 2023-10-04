@@ -15,7 +15,13 @@
 </script>
 
 <main>
-	<p align="right">中文点我（实在修不过来了，凑合点吧）：
+	<h1>{$t("about.title")}</h1>
+	<hr />
+	<!-- <img
+		src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc4NWMzMjRhYWQzOTNiOTE2ZGYzOTc5ZGVlZDhmOTIxYjM2NGI2MCZjdD1n/ASd0Ukj0y3qMM/giphy.gif"
+		alt="goodbye"
+	/> -->
+	<p align="right">
 		<svg 
 			class="localeSwitcher"
 			width="63px"
@@ -33,13 +39,6 @@
 			</g>
 		</svg>
 	</p>
-	<h1>{$t("about.title")}</h1>
-	<hr />
-	<!-- <img
-		src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc4NWMzMjRhYWQzOTNiOTE2ZGYzOTc5ZGVlZDhmOTIxYjM2NGI2MCZjdD1n/ASd0Ukj0y3qMM/giphy.gif"
-		alt="goodbye"
-	/> -->
-	<p />
 	<p>{@html $t("about.body", { time })}</p>
 	<p>{@html $t("about.footer")}</p>
 </main>
