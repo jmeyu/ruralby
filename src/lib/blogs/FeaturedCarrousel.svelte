@@ -1,17 +1,14 @@
 <script>
 	export let posts;
 	import Featured from '$lib/blogs/Featured.svelte';
-	import Carousel from './Carousel.svelte'
 </script>
 
 <section class="carousel">
-	<Carousel autoplay="2000">
 	{#each posts as post}
 		<div class="carousel-item" style="--avg-color: {post.color}">
 			<Featured {post} />
 		</div>
 	{/each}
-	</Carousel>
 </section>
 
 <style lang="scss">
