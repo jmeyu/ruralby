@@ -89,7 +89,7 @@
 </script>
 
 {#if showToast}
-	<Toast message={'Message Sent'} description={'The message was sent. 收到啦。'} show={showToast} />
+	<Toast message={$t("contact.messageSent")} description={$t("contact.messageSentDesc")} show={showToast} />
 {/if}
 
 <div class="contact">

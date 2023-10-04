@@ -1,5 +1,7 @@
 export default {
   en: {
+    "contact.messageSent":"Message Sent",
+    "contact.messageSentDesc":"The message was sent",
     "contact.header": "Say Hello Secretly!",
     "contact.disclaimer": "Your email, name and message will not be published.",
     "contact.name": "Your name",
@@ -10,6 +12,8 @@ export default {
     "contact.send":"SEND MESSAGE",
   },
   zh: {
+    "contact.messageSent":"发送成功",
+    "contact.messageSentDesc":"收到啦！",
     "contact.header": "一个匿名投信站。",
     "contact.disclaimer": "你的邮箱、名字与信件内容将不会被公开。",
     "contact.name": "名字/称呼",
