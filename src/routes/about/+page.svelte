@@ -16,7 +16,7 @@
 
 <main>
 	<h1>{$t("about.title")}</h1>
-	<p align="right">
+	<p align="right">中文点我（实在修不过来了，凑合点吧）：
 		<svg 
 			class="localeSwitcher"
 			width="63px"
