@@ -33,46 +33,15 @@
 			</g>
 		</svg>
 	</p>
-	<h1>{$t("aboutpage.title")}</h1>
+	<h1>{$t("about.title")}</h1>
 	<hr />
 	<img
 		src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc4NWMzMjRhYWQzOTNiOTE2ZGYzOTc5ZGVlZDhmOTIxYjM2NGI2MCZjdD1n/ASd0Ukj0y3qMM/giphy.gif"
 		alt="goodbye"
 	/>
-	<p>Hey there!</p>
 	<p />
-	<p><i>{@html $t("aboutpage.body")}</i></p>
-	<p>
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-		When an unknown printer took a galley of type and scrambled it to make a type specimen book.
-		It has survived not only five centuries, but also the leap into electronic typesetting,
-		remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-		sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-		like Aldus PageMaker including versions of Lorem Ipsum.
-	</p>
-	<p>
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-		When an unknown printer took a galley of type and scrambled it to make a type specimen book.
-		It has survived not only five centuries, but also the leap into electronic typesetting,
-		remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-		sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-		like Aldus PageMaker including versions of Lorem Ipsum.
-	</p>
-	<p>
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-		When an unknown printer took a galley of type and scrambled it to make a type specimen book.
-		It has survived not only five centuries, but also the leap into electronic typesetting,
-		remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-		sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-		like Aldus PageMaker including versions of Lorem Ipsum.
-	</p>
-	<p>
-		Best regards, <br />
-		Jermin
-	</p>
+	<p>{@html $t("about.body", { time })}</p>
+	<p>{@html $t("about.footer")}</p>
 </main>
 
 <style lang="scss">
