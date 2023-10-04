@@ -146,7 +146,7 @@
 		fill: #444
 	}
 	
-	circle.en {
+	circle.zh {
 		transform: translatex(18px);
 	}
 	
@@ -155,7 +155,7 @@
 		fill: #222;
 	}
 	
-	.en path.en, .zh path.zh {
+	.zh path.zh, .en path.en {
 		fill: #eee;
 	}
 </style>
