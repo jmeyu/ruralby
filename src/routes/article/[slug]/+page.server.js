@@ -1,7 +1,7 @@
 import client from '$lib/blogs/sanityClient';
 
 export async function load({ params }) {
-  const data = await client.fetch(`*[_type=="blog" && slug.current == '${params.slug}'][0] order(_updatedAt desc) {
+  const data = await client.fetch(`*[_type=="blog" && slug.current == '${params.slug}'][0] {
     ...,
     category->{
       name,

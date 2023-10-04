@@ -12,13 +12,17 @@
 - [x] Upload main articles
 - [x] Set up translation toggle button for "Hero"
 
+## 2023-10-04
+- [x] Fix the "1 minute read" bug
+- [x] Set up translation toggle button for "Contact Me"
+- [x] Set up translation toggle button for "About"
+- [x] Set up translation toggle button for "Toaster"
+- [x] Upload all articles
+
 ### To-Do
 - [ ] Change blog colour theme / Toggle colour theme
 - [ ] Fix blog title not showing
-- [ ] Upload all articles
 - [ ] Create new field of "Chores Worth" for Review
 - [ ] Create new document type for Misc Notes
-- [ ] Fix the "1 minute read" bug
-- [ ] Set up translation toggle button for "Contact Me"
 - [ ] Replace "logo" item
 - [ ] Disable copying and right click
