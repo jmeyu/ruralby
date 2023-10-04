@@ -1,6 +1,6 @@
 <script>
 	import { t, locale, locales } from "./About_i18n.js";
-	export let lang = 'en';
+	export let lang = 'zh';
 	// Create a locale specific timestamp
 	$: time = new Date().toLocaleDateString(lang, {
 		weekday: "long",
