@@ -6,10 +6,10 @@
 
 	function sortPosts(multiplier) {
         posts.sort((a,b) => { 
-            if (a.daysAgo > b.daysAgo) {
+            if (a.strDate > b.strDate) {
                 return 1 * multiplier;
             }
-            if (a.daysAgo < b.daysAgo) {
+            if (a.strDate < b.strDate) {
                 return -1 * multiplier;
             } 
             return 0;
