@@ -4,6 +4,7 @@
 	import '../../styles/markdown.scss';
 	import { fade } from 'svelte/transition';
 	import Footer from '$lib/blogs/Footer.svelte';
+	import Analytics from '$lib/analytics.svelte'
 </script>
 
 <svelte:head>
@@ -32,7 +33,7 @@
 		content="About page - Ruralby. It's me, Jermin."
 	/>
 </svelte:head>
-
+<Analytics />
 <Header />
 <Nav />
 <main transition:fade>

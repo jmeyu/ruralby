@@ -1,5 +1,8 @@
-
+<script>
+	import Analytics from '$lib/analytics.svelte'
+</script>
 <main>
+	<Analytics />
 	<slot />
 </main>
 

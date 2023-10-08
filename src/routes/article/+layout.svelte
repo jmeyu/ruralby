@@ -4,8 +4,10 @@
 	import 'highlight.js/styles/night-owl.css';
 	import '../../styles/markdown.scss';
 	import Footer from '$lib/blogs/Footer.svelte';
+	import Analytics from '$lib/analytics.svelte'
 </script>
 
+<Analytics />
 <Header />
 <Nav />
 <main>

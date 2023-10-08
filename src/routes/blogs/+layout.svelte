@@ -7,12 +7,14 @@
 	import Jumper from '$lib/Other/Jumper.svelte';
 	import '../../styles/fonts.css';
 	import '../../styles/markdown.scss';
+	import Analytics from '$lib/analytics.svelte'
 
 	let loaded = false;
 	onMount(() => (loaded = true));
 </script>
 
 <svelte:head>
+	<Analytics />
 	<!-- Primary Meta Tags -->
 	<title>Blogs | Jermin</title>
 	<meta name="title" content="Blogs | Jermin" />

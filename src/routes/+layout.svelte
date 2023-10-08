@@ -5,6 +5,7 @@
 	import { navigating } from '$app/stores';
 	import 'nprogress/nprogress.css';
 	import { loadIcons } from '@iconify/svelte';
+	import Analytics from '$lib/analytics.svelte'
 	loadIcons([
 		'bx:calendar',
 		'bx:compass',
@@ -54,6 +55,7 @@
 	});
 </script>
 
+<Analytics />
 <FirstTime />
 <slot />
 
