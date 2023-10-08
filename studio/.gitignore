@@ -21,7 +21,6 @@
 # Misc
 .DS_Store
 *.pem
-src\lib\analytics.svelte
 
 # Typescript
 *.tsbuildinfo
