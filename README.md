@@ -4,7 +4,7 @@
 
 ## Installation
 
-Ruralby requires [Netlify](https://app.netlify.com/) to deploy.
+Ruralby requires [Netlify](https://ruralby.com/) to deploy.
 Create an account in Netlify and add your repository to deploy.
 
 
