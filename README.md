@@ -1,10 +1,10 @@
 ## A personal blog made with love, sanity and Sanity
 
-[![Ruralby](https://github.com/jmeyu/ruralby/blob/main/static/img/favicon/favicon-32x32.png)](https://ruralby.netlify.app/) [![Ruralby](https://img.shields.io/badge/-Ruralby.-black?style=for-the-badge&logo=pencil&color=orange&logoColor=white)](https://ruralby.netlify.app/)
+[![Ruralby](https://github.com/jmeyu/ruralby/blob/main/static/img/favicon/favicon-32x32.png)](https://ruralby.com/) [![Ruralby](https://img.shields.io/badge/-Ruralby.-black?style=for-the-badge&logo=pencil&color=orange&logoColor=white)](https://ruralby.com/)
 
 ## Installation
 
-Ruralby requires [Netlify](https://ruralby.com/) to deploy.
+Ruralby requires [Netlify](https://netlify.com/) to deploy.
 Create an account in Netlify and add your repository to deploy.
 
 
